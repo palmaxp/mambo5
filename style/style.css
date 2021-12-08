@@ -55,7 +55,7 @@ body {
   font-weight: normal;
   font-size: 64px;
   line-height: 67px;
-  color: #fff;
+  color: #f5e4ff;
   -webkit-filter: drop-shadow(0px 5px 6px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(0px 5px 6px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
@@ -93,27 +93,20 @@ body {
 }
 
 .proposal .content-img {
-  -webkit-box-ordinal-group: 1;
-      -ms-flex-order: 0;
-          order: 0;
-}
-
-.proposal .proposal-img {
-  max-width: 530px;
+  margin-top: 16px;
+  width: 509px;
+  max-width: 100%;
 }
 
 .proposal .proposal-img img {
   padding: 80px 40px 0 0;
   background-color: #e035f0;
-  width: 100%;
 }
 
 .proposal .proposal-content {
-  -webkit-box-ordinal-group: 1;
-      -ms-flex-order: 0;
-          order: 0;
   padding-top: 20px;
   padding-left: 40px;
+  max-width: 100%;
 }
 
 .proposal .proposal-content h2 {
@@ -140,7 +133,7 @@ body {
 .benefits {
   padding: 120px 0;
   background-color: #190324;
-  color: #fff;
+  color: #efd5ff;
 }
 
 .benefits h2 {
@@ -175,7 +168,7 @@ body {
   width: 110px;
   height: 110px;
   border-radius: 50%;
-  background-color: white;
+  background-color: #f5e4ff;
 }
 
 .benefits .card h3 {
@@ -190,7 +183,7 @@ body {
 }
 
 .cta {
-  background-color: white;
+  background-color: #f5e4ff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -225,7 +218,7 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0 auto;
-  color: white;
+  color: #f5e4ff;
   text-align: center;
   height: 300px;
 }
@@ -248,7 +241,7 @@ footer div {
   }
   .proposal {
     min-height: auto;
-    padding: 40px 0 20px 0;
+    padding: 40px 0 40px 0;
   }
   .proposal .scroll {
     background: none;
@@ -263,7 +256,7 @@ footer div {
     font-size: 12px;
   }
   .proposal-2 {
-    padding: 20px 0 40px 0;
+    padding: 20px 0 60px 0;
   }
   .intro {
     height: 600px;
@@ -276,11 +269,6 @@ footer div {
     max-width: 200px;
     font-size: 36px;
     line-height: 3.2rem;
-  }
-  .content-img {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
   }
   .content-img img,
   .content-img {

@@ -44,7 +44,7 @@ body {
     font-weight: normal;
     font-size: 64px;
     line-height: 67px;
-    color: #fff;
+    color: #f5e4ff;
     filter: drop-shadow(0px 5px 6px rgba(0, 0, 0, 0.25))
       drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
@@ -73,20 +73,20 @@ body {
     transform: translate(-50%);
   }
   .content-img {
-    order: 0;
+    margin-top: 16px;
+    width: 509px;
+    max-width: 100%;
   }
   .proposal-img {
-    max-width: 530px;
     img {
       padding: 80px 40px 0 0;
       background-color: #e035f0;
-      width: 100%;
     }
   }
   .proposal-content {
-    order: 0;
     padding-top: 20px;
     padding-left: 40px;
+    max-width: 100%;
     h2 {
       font-style: normal;
       font-weight: bold;
@@ -107,11 +107,10 @@ body {
 .proposal-2 {
   background-color: #efd5ff;
 }
-
 .benefits {
   padding: 120px 0;
   background-color: #190324;
-  color: #fff;
+  color: #efd5ff;
   h2 {
     text-align: center;
     font-size: 64px;
@@ -134,7 +133,7 @@ body {
       width: 110px;
       height: 110px;
       border-radius: 50%;
-      background-color: white;
+      background-color: #f5e4ff;
     }
     h3 {
       margin-top: 24px;
@@ -149,7 +148,7 @@ body {
 }
 
 .cta {
-  background-color: white;
+  background-color: #f5e4ff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -170,7 +169,7 @@ footer {
   align-items: center;
   flex-direction: column;
   margin: 0 auto;
-  color: white;
+  color: #f5e4ff;
   text-align: center;
   height: 300px;
   img {
@@ -191,7 +190,7 @@ footer {
   }
   .proposal {
     min-height: auto;
-    padding: 40px 0 20px 0;
+    padding: 40px 0 40px 0;
     .scroll {
       background: none;
     }
@@ -206,7 +205,7 @@ footer {
     }
   }
   .proposal-2 {
-    padding: 20px 0 40px 0;
+    padding: 20px 0 60px 0;
   }
   .intro {
     header {
@@ -222,14 +221,10 @@ footer {
       line-height: 3.2rem;
     }
   }
-  .content-img {
-    order: 1;
-  }
   .content-img img,
   .content-img {
     margin: 0 auto;
   }
-
   .benefits {
     padding: 60px 0;
     h2 {
