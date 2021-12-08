@@ -40,11 +40,14 @@ body {
   }
 }
 
-.facility {
+.proposal {
   background-color: white;
   padding: 140px 0;
-  display: flex;
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
   .scroll {
     position: absolute;
     display: block;
@@ -54,18 +57,20 @@ body {
     background-position: center center;
     width: 45px;
     height: 45px;
-    top: 17px;
+    top: 16px;
     left: 50%;
     transform: translate(-50%);
   }
-  img {
-    border: 7px solid #e035f0;
-    border-left: 0;
-    background-color: #e035f0;
-    width: 100%;
+  .proposal-img {
+    order: 0;
     max-width: 530px;
   }
-  .facility-content {
+  img {
+    padding: 80px 40px 0 0;
+    background-color: #e035f0;
+    width: 100%;
+  }
+  .proposal-content {
     padding-top: 20px;
     padding-left: 40px;
     h2 {
@@ -84,4 +89,12 @@ body {
       color: #190324;
     }
   }
+  .proposal-2 {
+    padding-top: 150px;
+  }
+}
+
+.benefits {
+  background-color: #190324;
+  color: #fff;
 }

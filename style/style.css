@@ -47,16 +47,23 @@ body {
   color: #fff;
 }
 
-.facility {
+.proposal {
   background-color: white;
   padding: 140px 0;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.facility .scroll {
+.proposal .scroll {
   position: absolute;
   display: block;
   background: url("../assets/scroll.png");
@@ -65,26 +72,31 @@ body {
   background-position: center center;
   width: 45px;
   height: 45px;
-  top: 17px;
+  top: 16px;
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
 }
 
-.facility img {
-  border: 7px solid #e035f0;
-  border-left: 0;
-  background-color: #e035f0;
-  width: 100%;
+.proposal .proposal-img {
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
   max-width: 530px;
 }
 
-.facility .facility-content {
+.proposal img {
+  padding: 80px 40px 0 0;
+  background-color: #e035f0;
+  width: 100%;
+}
+
+.proposal .proposal-content {
   padding-top: 20px;
   padding-left: 40px;
 }
 
-.facility .facility-content h2 {
+.proposal .proposal-content h2 {
   font-family: "Baloo 2", cursive, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -92,12 +104,21 @@ body {
   color: #190324;
 }
 
-.facility .facility-content p {
+.proposal .proposal-content p {
   font-family: "Baloo 2", cursive, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 105.4%;
   color: #190324;
+}
+
+.proposal .proposal-2 {
+  padding-top: 150px;
+}
+
+.benefits {
+  background-color: #190324;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
