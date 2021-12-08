@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  background-color: #190324;
+}
+
+.text-color {
+  color: #e035f0;
+}
+
+.intro {
+  background-image: url("../assets/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 90vh;
+}
+
+.intro header {
+  padding-top: 5vh;
+}
+
+.intro header img {
+  max-width: 175px;
+}
+
+.intro .text {
+  margin-top: 90px;
+  margin-left: 50px;
+  max-width: 430px;
+  font-family: "Baloo 2", cursive, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 67px;
+  color: #fff;
+}
+
+.facility {
+  background-color: white;
+  padding: 140px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.facility .scroll {
+  position: absolute;
+  display: block;
+  background: url("../assets/scroll.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 45px;
+  height: 45px;
+  top: 17px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.facility img {
+  border: 7px solid #e035f0;
+  border-left: 0;
+  background-color: #e035f0;
+  width: 100%;
+  max-width: 530px;
+}
+
+.facility .facility-content {
+  padding-top: 20px;
+  padding-left: 40px;
+}
+
+.facility .facility-content h2 {
+  font-family: "Baloo 2", cursive, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  color: #190324;
+}
+
+.facility .facility-content p {
+  font-family: "Baloo 2", cursive, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 105.4%;
+  color: #190324;
+}
+/*# sourceMappingURL=style.css.map */
