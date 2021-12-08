@@ -141,3 +141,37 @@ body {
     }
   }
 }
+
+.cta {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 400px;
+  .content {
+    .btn {
+      margin-top: 16px;
+      padding: 10px 20px;
+      background-color: #e035f0;
+    }
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  height: 300px;
+  img {
+    margin: 0 auto;
+    max-width: 150px;
+  }
+  div {
+    margin-top: 16px;
+  }
+}

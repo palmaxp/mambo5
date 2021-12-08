@@ -179,4 +179,54 @@ body {
   max-width: 410px;
   margin-top: 8px;
 }
+
+.cta {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  height: 400px;
+}
+
+.cta .content .btn {
+  margin-top: 16px;
+  padding: 10px 20px;
+  background-color: #e035f0;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  height: 300px;
+}
+
+footer img {
+  margin: 0 auto;
+  max-width: 150px;
+}
+
+footer div {
+  margin-top: 16px;
+}
 /*# sourceMappingURL=style.css.map */
