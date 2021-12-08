@@ -56,12 +56,15 @@ body {
   font-size: 64px;
   line-height: 67px;
   color: #fff;
+  -webkit-filter: drop-shadow(0px 5px 6px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 5px 6px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .proposal {
   background-color: #f5e4ff;
   position: relative;
-  height: 80vh;
+  min-height: 80vh;
+  padding: 11vh 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -89,10 +92,13 @@ body {
           transform: translate(-50%);
 }
 
-.proposal .proposal-img {
+.proposal .content-img {
   -webkit-box-ordinal-group: 1;
       -ms-flex-order: 0;
           order: 0;
+}
+
+.proposal .proposal-img {
   max-width: 530px;
 }
 
@@ -103,6 +109,9 @@ body {
 }
 
 .proposal .proposal-content {
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
   padding-top: 20px;
   padding-left: 40px;
 }
@@ -228,5 +237,83 @@ footer img {
 
 footer div {
   margin-top: 16px;
+}
+
+@media only screen and (max-width: 992px) {
+  h2 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 12px;
+  }
+  .proposal {
+    min-height: auto;
+    padding: 40px 0 20px 0;
+  }
+  .proposal .scroll {
+    background: none;
+  }
+  .proposal .proposal-content {
+    padding: 20px 20px 0 20px;
+  }
+  .proposal .proposal-content h2 {
+    font-size: 24px;
+  }
+  .proposal .proposal-content p {
+    font-size: 12px;
+  }
+  .proposal-2 {
+    padding: 20px 0 40px 0;
+  }
+  .intro {
+    height: 600px;
+  }
+  .intro header img {
+    margin: 0 auto;
+  }
+  .intro .text {
+    margin: 50px 0 0 0;
+    max-width: 200px;
+    font-size: 36px;
+    line-height: 3.2rem;
+  }
+  .content-img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .content-img img,
+  .content-img {
+    margin: 0 auto;
+  }
+  .benefits {
+    padding: 60px 0;
+  }
+  .benefits h2 {
+    font-size: 30px;
+  }
+  .benefits .cards {
+    margin: 0 auto;
+  }
+  .benefits .cards .img-wrapper {
+    width: 70px;
+    height: 70px;
+  }
+  .benefits .cards .img-wrapper img {
+    width: 50px;
+    height: 50px;
+  }
+  .benefits .card {
+    min-height: auto;
+  }
+  .benefits .card:last-child {
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .intro {
+    background-position: -440px center;
+  }
 }
 /*# sourceMappingURL=style.css.map */

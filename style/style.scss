@@ -45,13 +45,16 @@ body {
     font-size: 64px;
     line-height: 67px;
     color: #fff;
+    filter: drop-shadow(0px 5px 6px rgba(0, 0, 0, 0.25))
+      drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
 }
 
 .proposal {
   background-color: #f5e4ff;
   position: relative;
-  height: 80vh;
+  min-height: 80vh;
+  padding: 11vh 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -69,8 +72,10 @@ body {
     left: 50%;
     transform: translate(-50%);
   }
-  .proposal-img {
+  .content-img {
     order: 0;
+  }
+  .proposal-img {
     max-width: 530px;
     img {
       padding: 80px 40px 0 0;
@@ -79,6 +84,7 @@ body {
     }
   }
   .proposal-content {
+    order: 0;
     padding-top: 20px;
     padding-left: 40px;
     h2 {
@@ -173,5 +179,83 @@ footer {
   }
   div {
     margin-top: 16px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  h2 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 12px;
+  }
+  .proposal {
+    min-height: auto;
+    padding: 40px 0 20px 0;
+    .scroll {
+      background: none;
+    }
+    .proposal-content {
+      padding: 20px 20px 0 20px;
+      h2 {
+        font-size: 24px;
+      }
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+  .proposal-2 {
+    padding: 20px 0 40px 0;
+  }
+  .intro {
+    header {
+      img {
+        margin: 0 auto;
+      }
+    }
+    height: 600px;
+    .text {
+      margin: 50px 0 0 0;
+      max-width: 200px;
+      font-size: 36px;
+      line-height: 3.2rem;
+    }
+  }
+  .content-img {
+    order: 1;
+  }
+  .content-img img,
+  .content-img {
+    margin: 0 auto;
+  }
+
+  .benefits {
+    padding: 60px 0;
+    h2 {
+      font-size: 30px;
+    }
+    .cards {
+      margin: 0 auto;
+      .img-wrapper {
+        width: 70px;
+        height: 70px;
+        img {
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+    .card {
+      min-height: auto;
+      &:last-child {
+        margin-top: 30px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  .intro {
+    background-position: -440px center;
   }
 }
